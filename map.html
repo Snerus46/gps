@@ -10,9 +10,9 @@
       <div class="bg"></div>
      <div class="bg-others"> 
     <div class="container">
-      <h1 >Realtime GPS Tracker</h1>
+      <h1 >Realtime GPS Tracker with Raspberry PI</h1>
         <center><hr style="height:2px; border:none; color:#ffffff; background-color:#ffffff; width:35%; margin: 0 auto 0 auto;"></center>
-        <p>SMART PERSONAL SAFETY DEVICE USING IoT</p>  
+        <p></p>  
         <center><div id="map-canvas"></div></center>
     </div>
           </div>
@@ -21,8 +21,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
     <script>
-    window.lat = 37.7850;
-    window.lng = -122.4383;
+    window.lat =8
+    window.lng = -76;
 
     var map;
     var mark;
@@ -35,14 +35,12 @@
 
         const firebaseConfig = {
 
-     apiKey: "AIzaSyDn_M225bRTEvB6w-EJBc__QpVsga5Psxw",
-  authDomain: "gpstracker-ea30e.firebaseapp.com",
-  databaseURL: "https://gpstracker-ea30e-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "gpstracker-ea30e",
-  storageBucket: "gpstracker-ea30e.appspot.com",
-  messagingSenderId: "7903455802",
-  appId: "1:7903455802:web:bf7e78c97b04efd742a303"
-
+ apiKey: "AIzaSyCWCOe9X8fzaRll-ZNsYX2WsHPbgk2x8fc",
+  authDomain: "gps-tracker-3676f.firebaseapp.com",
+  databaseURL: "https://gps-tracker-3676f-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "gps-tracker-3676f",
+  storageBucket: "gps-tracker-3676f.appspot.com",
+  messagingSenderId: "19331396969"
     };
 
     window.initialize = initialize;
@@ -66,7 +64,7 @@
       var lineCoordinatesPath = new google.maps.Polyline({
         path: lineCoords,
         geodesic: true,
-        strokeColor: '#00FFFF'
+        strokeColor: '#2E10FF'
       });
       
       lineCoordinatesPath.setMap(map);
@@ -75,6 +73,7 @@
     });
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHh4YJaK7MHnNEgait6n9T1Qgw6SJ79VY&callback=initialize"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD0WfH8Ei8sZE86UuHSEhG0djIT5edJJKk&callback=initialize"></script>
   </body>
 </html>
+
